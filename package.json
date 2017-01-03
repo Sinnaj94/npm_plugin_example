@@ -1,0 +1,23 @@
+{
+  "name": "npm_plugin_example",
+  "version": "0.1.0",
+  "description": "A NPM Plugin Test",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sinnaj94/npm_plugin_example.git"
+  },
+  "author": "Jannis Jahr <jannis.jahr@eventim.de> (eventim.de)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sinnaj94/npm_plugin_example/issues"
+  },
+  "homepage": "https://github.com/Sinnaj94/npm_plugin_example#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}
