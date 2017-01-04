@@ -1,10 +1,11 @@
 {
   "name": "npm_plugin_example",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "A NPM Plugin Test",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "start": "node main.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,8 @@
   "homepage": "https://github.com/Sinnaj94/npm_plugin_example#readme",
   "devDependencies": {
     "chai": "^3.5.0",
-    "mocha": "^3.2.0"
+    "jquery": "^3.1.1",
+    "mocha": "^3.2.0",
+    "sinopia": "^1.4.0"
   }
 }
