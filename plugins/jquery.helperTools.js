@@ -1,8 +1,12 @@
 'use strict';
 var jQuery = require('jquery');
 
+function createPlugin(name) {
+	return `Creating Plugin for ${name}.`
+}
+
 module.exports.mathHelpers = (function() {
-	var pluginName = 'dotOut',
+	var pluginName = 'math',
 		defaults = {
 			fieldA : 'js-field-a',
 			fieldB : 'js-field-b',
@@ -17,7 +21,7 @@ module.exports.mathHelpers = (function() {
 	function multiply(a,b) {
 		return a * b;
 	}
-	function sqrt(number, base) {
+	function sqrt(number) {
 		return Math.sqrt(number);
 	}
 	function print() {
@@ -26,16 +30,18 @@ module.exports.mathHelpers = (function() {
 	return {
 		getPlugin: function (options) {
 			//Wraps the Plugin as a jQuery Plugin
-			return `Wrapping the Plugin ${pluginName} as a jQuery Plugin...`;
+			return createPlugin(pluginName);
 		},
-		testPlugin: function (otions) {
-			return "test";
+		testPlugin: function (a, b) {
+			var str = `a: ${a}, b: ${b}, Add: ${add(a,b)}, multiply: ${multiply(a,b)}, sqrt1: ${sqrt(a)}, sqrt2: ${sqrt(b)}`;
+			return str;
 		}
 	}
 })();
 
 
 module.exports.greetingsHelpers = (function() {
+	var pluginName = 'greetings';
 	function inGerman() {
 		return "Hallo Welt!";
 	}
@@ -50,8 +56,7 @@ module.exports.greetingsHelpers = (function() {
 	}
 	return {
 		getPlugin: function (options) {
-			var ret = "All Prints:\n"+inGerman() + " " + inEnglish() + " " + inFrench() + " " + inPortuguese();
-			return ret;
+			return createPlugin(pluginName);
 		}
 	}
 })();

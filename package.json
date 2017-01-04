@@ -1,6 +1,6 @@
 {
   "name": "npm_plugin_example",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "A NPM Plugin Test",
   "main": "main.js",
   "scripts": {
