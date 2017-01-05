@@ -3,10 +3,9 @@ npm Plugin Example
 
 Sample architecture for a plugin
 
-## Installation
-	`npm install npm_plugin_example`
+`npm install npm_plugin_example`
 
-## Description
+
 	In the [rootfolder](.) of the project there is the main.js. From here we require the Plugins that are lying inside the [Plugins](./plugins) folder. Inside the rootfolder there is one file right now, the [jquery.helperTools.js](./plugins/jquery.helperTools.js), where the "Plugins" are bundled. Maybe it is useful to split these files. Inside this file, we have multiple Modules. The syntax of defining an npm module is
 	```javascript
 	module.exports.moduleName = (function() {
@@ -65,8 +64,8 @@ Sample architecture for a plugin
 	console.log(mathHelpers.testPlugin(4,4)); //output: a: 4, b: 4, Add: 8, multiply: 16, sqrt1: 2, sqrt2: 2
 	```
 
-## Usage
+
 	`npm start`
 
-## Tests (not implemented yet)
+
 	`npm test`
