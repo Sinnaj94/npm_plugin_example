@@ -5,4 +5,4 @@ var helperTools = require('./plugins/jquery.helperTools.js'),
 	greetingsHelpers = helperTools.greetingsHelpers;
 console.log(mathHelpers.getPlugin(undefined));
 console.log(greetingsHelpers.getPlugin(undefined));
-console.log(mathHelpers.testPlugin(1,2));
+console.log(mathHelpers.testPlugin(4,4));
