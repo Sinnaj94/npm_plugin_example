@@ -2,7 +2,7 @@
 ## installation
 `npm install npm_plugin_example` 
 ## description of the plugin
-In the [rootfolder](./) of the project there is the main.js. From here we require the Plugins that are lying inside the [Plugins](./plugins) folder. Inside the rootfolder there is one file right now, the [jquery.helperTools.js](./plugins/jquery.helperTools.js), where the "Plugins" are bundled. Maybe it is useful to split these files. Inside this file, we have multiple Modules. The syntax of defining an npm module is
+In the rootfloder of the project there is the main.js. From here we require the Plugins that are lying inside the [Plugins](./plugins) folder. Inside the rootfolder there is one file right now, the [jquery.helperTools.js](./plugins/jquery.helperTools.js), where the "Plugins" are bundled. Maybe it is useful to split these files. Inside this file, we have multiple Modules. The syntax of defining an npm module is
 ```javascript
 module.exports.moduleName = (function() {
 	//functions
