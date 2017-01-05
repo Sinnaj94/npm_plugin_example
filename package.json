@@ -1,6 +1,6 @@
 {
   "name": "npm_plugin_example",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A NPM Plugin Test",
   "main": "main.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/Sinnaj94/npm_plugin_example.git"
   },
-  "author": "Jannis Jahr <jannis.jahr@eventim.de> (eventim.de)",
+  "author": "Jannis Jahr <jannis.jahr@hotmail.de>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Sinnaj94/npm_plugin_example/issues"
